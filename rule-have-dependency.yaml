@@ -1,0 +1,22 @@
+extends:
+  - [spectral:oas, off]
+
+functions:
+  - checkPlural
+
+documentationUrl: https://www.example.com/docs/api-style-guide.md
+rules:
+  oas3-schema: true
+  oas2-schema: true
+  info-contact: true
+  info-description: true
+  info-license: true
+  license-url: true
+  # check oas have openapi or swagger field.
+  check-plural:
+    description: The document must be specify the OAS version it is supporting.
+    message: "{{description}}; {{error}}"
+    severity: warn
+    given: $
+    then:
+      function: checkPlural
