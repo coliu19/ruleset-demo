@@ -1,0 +1,28 @@
+{
+  "name": "ruleset-demo",
+  "version": "1.0.0",
+  "description": "ruleset",
+  "scripts": {
+    "lint": "npx eslint --cache --ext '.js' ."
+  },
+  "engines": {
+    "node": ">=16"
+  },
+  "license": "ISC",
+  "keywords": [
+    "openapi",
+    "ruleset"
+  ],
+  "author": "Me",
+  "dependencies": {
+    "@stoplight/spectral-cli": "^6.4.1",
+    "@stoplight/spectral-core": "^1.12.2",
+    "@stoplight/spectral-formats": "^1.2.0",
+    "@stoplight/spectral-functions": "^1.7.1",
+    "@stoplight/spectral-rulesets": "^1.12.0",
+    "pluralize": "^8.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.18.0"
+  }
+}
