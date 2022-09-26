@@ -2,6 +2,7 @@
   "name": "ruleset-demo",
   "version": "1.0.0",
   "description": "ruleset",
+  "main": ".spectral.js",
   "scripts": {
     "lint": "npx eslint --cache --ext '.js' ."
   },
