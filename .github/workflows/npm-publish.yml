@@ -33,6 +33,8 @@ jobs:
         run: |
           echo $RELEASE_VERSION
           echo ${{ env.RELEASE_VERSION }}
+      - run: git config --global user.email "you@example.com"
+      - run: git config --global user.name "github auto"
       - run: npm version ${{ env.RELEASE_VERSION }}
       - run: npm ci
       - run: npm publish
