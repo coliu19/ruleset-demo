@@ -34,6 +34,7 @@ jobs:
           echo $RELEASE_VERSION
           echo ${{ env.RELEASE_VERSION }}
       - run: git config --global user.email "you@example.com"
+        # TODO: use some 3rd party snippet for this process.
       - run: git config --global user.name "github auto"
       - run: npm --no-git-tag-version version ${{ env.RELEASE_VERSION }}
       - run: git branch
@@ -46,6 +47,6 @@ jobs:
       - run: git push origin HEAD:master
       # - run: git push origin HEAD:master
       - run: npm ci
-      - run: npm publish
+      - run: npm publish --access=public
         env:
           NODE_AUTH_TOKEN: ${{secrets.npm_token}}
