@@ -36,6 +36,9 @@ jobs:
       - run: git config --global user.email "you@example.com"
       - run: git config --global user.name "github auto"
       - run: npm --no-git-tag-version version ${{ env.RELEASE_VERSION }}
+      - run: git branch
+      - run: git log
+      - run: cat package.json
         # Tricky
       - run: git push origin HEAD:master
       - run: npm ci
