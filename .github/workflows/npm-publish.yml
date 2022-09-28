@@ -47,6 +47,7 @@ jobs:
       - run: git push origin HEAD:master
       # - run: git push origin HEAD:master
       - run: npm ci
-      - run: npm publish --access=public
+      # - run: npm publish --access=public
+      - run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{secrets.npm_token}}
