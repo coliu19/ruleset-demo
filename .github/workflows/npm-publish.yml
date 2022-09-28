@@ -39,8 +39,12 @@ jobs:
       - run: git branch
       - run: git log
       - run: cat package.json
+      - run: git add package*
+      - run: git commit -m "bump version to ${{ env.RELEASE_VERSION }}"
+      - run: git branch
         # Tricky
       - run: git push origin HEAD:master
+      # - run: git push origin HEAD:master
       - run: npm ci
       - run: npm publish
         env:
