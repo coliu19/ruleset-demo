@@ -4,7 +4,8 @@
   "description": "ruleset",
   "main": ".spectral.js",
   "scripts": {
-    "lint": "npx eslint --cache --ext '.js' ."
+    "lint": "npx eslint --cache --ext '.js' .",
+    "test": "echo hello"
   },
   "engines": {
     "node": ">=16"
