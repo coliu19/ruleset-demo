@@ -36,6 +36,7 @@ jobs:
       - run: git config --global user.email "you@example.com"
         # TODO: use some 3rd party snippet for this process.
       - run: git config --global user.name "github auto"
+        # seems this changed branch
       - run: npm --no-git-tag-version version ${{ env.RELEASE_VERSION }}
       - run: git branch
       - run: git log
@@ -44,7 +45,7 @@ jobs:
       - run: git commit -m "bump version to ${{ env.RELEASE_VERSION }}"
       - run: git branch
         # Tricky
-      - run: git push origin HEAD:master
+      - run: git push origin HEAD:scoped
       # - run: git push origin HEAD:master
       - run: npm ci
       # - run: npm publish --access=public
