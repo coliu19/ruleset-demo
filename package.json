@@ -1,6 +1,6 @@
 {
   "name": "ruleset-demo",
-  "version": "1.0.1",
+  "version": "0.0.12",
   "description": "ruleset",
   "main": ".spectral.js",
   "scripts": {
