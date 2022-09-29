@@ -1,5 +1,5 @@
 {
-  "name": "@coliu19/ruleset-demo2",
+  "name": "@coliu19/ruleset-demo",
   "version": "0.0.24",
   "description": "ruleset",
   "main": ".spectral.js",
