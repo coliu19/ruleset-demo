@@ -1,3 +1,4 @@
+## Test command
 ```
 spectral lint petstore.json
 
